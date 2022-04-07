@@ -1,5 +1,0 @@
-# Plain text credentials configuration
-# Documentation and other options: http://kibitzr.readthedocs.io/en/latest/credentials.html
-service:
-  username: john
-  password: doe
