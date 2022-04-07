@@ -7,7 +7,7 @@
 
 Fork of Jargosh MusicBot, but in a Docker Image for easier installation.
 
-For configuration see the original authors Wiki: [github.com/jagrosh/MusicBot/wiki/Setup](https://github.com/jagrosh/MusicBot/wiki/Setup).
+For configuration see the original author's Wiki: [github.com/jagrosh/MusicBot/wiki/Setup](https://github.com/jagrosh/MusicBot/wiki/Setup).
 
 ## Docker compose
 
@@ -16,7 +16,7 @@ For configuration see the original authors Wiki: [github.com/jagrosh/MusicBot/wi
 version: "3"
 services:
   MusicBot:
-    image: callumpy/MusicBot
+    image: callumpy/discord-musicbot
     volumes:
       - $HOME/MusicBot:/data
 ````
