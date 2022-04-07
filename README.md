@@ -6,6 +6,7 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/callumpy/discord-musicbot.svg?label=Docker%20Pulls&maxAge=43200)](https://hub.docker.com/r/callumpy/discord-musicbot/)
 
 Fork of Jargosh MusicBot, but in a Docker Image for easier installation.
+
 For configuration see the original authors Wiki: [github.com/jagrosh/MusicBot/wiki/Setup](https://github.com/jagrosh/MusicBot/wiki/Setup).
 
 ## Docker compose
