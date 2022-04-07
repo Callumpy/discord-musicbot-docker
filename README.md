@@ -1,17 +1,12 @@
 # MusicBot
 
-[![Github Stars](https://img.shields.io/github/stars/supersandro2000/docker-images.svg?maxAge=43200&label=Github%20Stars)](https://github.com/SuperSandro2000/docker-images)
-[![GitHub readme](https://img.shields.io/badge/GitHub-readme-blue.svg)](https://github.com/SuperSandro2000/docker-images/blob/master/musicbot/README.md)
-[![Docker Stars](https://img.shields.io/docker/stars/supersandro2000/musicbot.svg?label=Docker%20Stars&maxAge=43200)](https://hub.docker.com/r/supersandro2000/musicbot/)
-[![Docker Hub](https://img.shields.io/badge/Docker-hub-blue.svg)](https://hub.docker.com/r/supersandro2000/musicbot/)
+[![Github Stars](https://img.shields.io/github/stars/callumpy/discord-musicbot-docker.svg?maxAge=43200&label=Github%20Stars)](https://github.com/callumpy/discord-musicbot-docker)
+[![Docker Stars](https://img.shields.io/docker/stars/callumpy/discord-musicbot.svg?label=Docker%20Stars&maxAge=43200)](https://hub.docker.com/r/callumpy/discord-musicbot/)
+[![Version](https://img.shields.io/docker/v/callumpy/discord-musicbot.svg?label=Version&sort=date&maxAge=43200)](https://hub.docker.com/r/callumpy/discord-musicbot/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/callumpy/discord-musicbot.svg?label=Docker%20Pulls&maxAge=43200)](https://hub.docker.com/r/callumpy/discord-musicbot/)
 
-[![Build Status](https://img.shields.io/travis/SuperSandro2000/docker-images.svg?maxAge=43200)](https://travis-ci.org/SuperSandro2000/docker-images)
-[![Version](https://img.shields.io/docker/v/supersandro2000/musicbot.svg?label=Version&sort=date&maxAge=43200)](https://hub.docker.com/r/supersandro2000/musicbot/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/supersandro2000/musicbot.svg?label=Docker%20Pulls&maxAge=43200)](https://hub.docker.com/r/supersandro2000/musicbot/)
-
-MusicBot Docker Image
-
-For configuration see [github.com/jagrosh/MusicBot/wiki/Setup](https://github.com/jagrosh/MusicBot/wiki/Setup).
+Fork of Jargosh MusicBot, but in a Docker Image for easier installation.
+For configuration see the original authors Wiki: [github.com/jagrosh/MusicBot/wiki/Setup](https://github.com/jagrosh/MusicBot/wiki/Setup).
 
 ## Docker compose
 
@@ -20,7 +15,7 @@ For configuration see [github.com/jagrosh/MusicBot/wiki/Setup](https://github.co
 version: "3"
 services:
   MusicBot:
-    image: supersandro2000/MusicBot
+    image: callumpy/MusicBot
     volumes:
       - $HOME/MusicBot:/data
 ````
