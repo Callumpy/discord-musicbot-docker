@@ -2,7 +2,7 @@
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/callumpy/discord-musicbot-docker)
 ![Docker Stars](https://img.shields.io/docker/stars/callumpy/discord-musicbot)
-[![Docker Image Version](https://img.shields.io/docker/v/callumpy/discord-musicbot?sort=date)](https://img.shields.io/docker/v/callumpy/discord-musicbot/0.4.0
+[![Docker Image Version](https://img.shields.io/docker/v/callumpy/discord-musicbot?sort=date)
 ![Docker Pulls](https://img.shields.io/docker/pulls/callumpy/discord-musicbot)
 
 This repo is a Fork of Jargosh MusicBot, but in a Docker Image for easier installation.
