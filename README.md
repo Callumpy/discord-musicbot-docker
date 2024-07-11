@@ -25,4 +25,6 @@ services:
     image: callumpy/discord-musicbot:latest
     volumes:
       - $HOME/MusicBot:/data
+    environment:
+      - VERSION={optional version number, ie 0.4.2}
 ````

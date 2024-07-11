@@ -3,14 +3,26 @@ FROM alpine:3.20.1 as builder
 
 RUN apk --no-cache add \
     ca-certificates \
-    wget
+    wget \
+    jq \
+    curl
 
-ARG VERSION=0.4.2
-RUN wget -q -O /JMusicBot.jar https://github.com/jagrosh/MusicBot/releases/download/$VERSION/JMusicBot-$VERSION.jar
+# Allow version to be set via build arg, defaulting to 'latest'
+ARG VERSION=latest
+
+# Fetch release information and download the jar
+RUN if [ "$VERSION" = "latest" ]; then \
+        RELEASE=$(curl -s https://api.github.com/repos/jagrosh/MusicBot/releases/latest | jq -r .tag_name); \
+    else \
+        RELEASE=$VERSION; \
+    fi && \
+    wget -q -O /JMusicBot.jar https://github.com/jagrosh/MusicBot/releases/download/${RELEASE}/JMusicBot-${RELEASE}.jar
 
 # Stage 2: Production stage
 FROM amazoncorretto:11.0.23-alpine3.19
 
+ARG BUILD_DATE
+ARG REVISION
 ARG VERSION
 
 LABEL maintainer="Callumpy" \
