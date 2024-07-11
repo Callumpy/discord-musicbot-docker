@@ -1,11 +1,11 @@
 # Stage 1: Build stage
-FROM alpine:3.19.1 as builder
+FROM alpine:3.20.1 as builder
 
 RUN apk --no-cache add \
     ca-certificates \
     wget
 
-ARG VERSION=0.4.1
+ARG VERSION=0.4.2
 RUN wget -q -O /JMusicBot.jar https://github.com/jagrosh/MusicBot/releases/download/$VERSION/JMusicBot-$VERSION.jar
 
 # Stage 2: Production stage
